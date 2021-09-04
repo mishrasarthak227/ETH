@@ -15,9 +15,9 @@ I have proposed a 3-level methodology of our work. First, I preprocessed the dat
 - **Raw Data:**
     
     We used the historical Ethereum prices of Binance 
-    obtained from www.cryptodatadownload.com . It contains 5670 records of daily
-    stock prices of the stocks from 17/08/2017 to 12/06/2021. Each record
-    contains hourly information of opening, closing, high, and low value of ETH
+    obtained from www.cryptodatadownload.com . It contains 33,362 records of hourly
+    prices of Ethereum from 17/08/2017 to 12/06/2021. Each record
+    contains information of opening, closing, highest, and lowest value of ETH
     as well as the volume of the ETH sold on that day.
 
 - **Data Pre-processing:**
