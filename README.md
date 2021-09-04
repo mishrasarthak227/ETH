@@ -16,9 +16,9 @@ I have proposed a 3-level methodology of our work. First, I preprocessed the dat
     
     We used the historical Ethereum prices of Binance 
     obtained from www.cryptodatadownload.com . It contains 5670 records of daily
-    stock prices of the stocks from 09/08/1996 to 22/02/2019. Each record
-    contains information of opening, closing, high, and low value of ETH
-    as well as the volume of the stock sold on that day.
+    stock prices of the stocks from 17/08/2017 to 12/06/2021. Each record
+    contains hourly information of opening, closing, high, and low value of ETH
+    as well as the volume of the ETH sold on that day.
 
 - **Data Pre-processing:**
     
@@ -38,11 +38,10 @@ I have proposed a 3-level methodology of our work. First, I preprocessed the dat
 The model is trained on the series of records containing High price (Highest Correlation with target), Volume (Lowest Correlation with
 target) and Close price of the stock. Different parameters of this ANN are as follows:
 
- - Timesteps: 72 (3 days)
+ - Timesteps: 24 (1 day)
  - Neurons in each Layer: 50 and 45
  - Learning Rate: 0.001
  - Batch Size: 32
- - Total Trainable Parameters: 7227
 
 The training data is fed to this network and the model is trained for 200 epochs on the training data and validated by the validation data.
 
