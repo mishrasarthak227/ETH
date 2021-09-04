@@ -61,30 +61,12 @@ operations and Pandas for data analysis.
 
 ## V) Results
 
-The experiments were done for four deep learning models we have
-trained. The models are cross validated on a window size of 600 records
-and 5 splits. The final results obtained are shown in Table 1 below.
-
-** Table 1: Results of different models on test data **
+** Table 1: Results of model on test data **
 
 | Model | Features Used | MSE | RMSE | R2-score |
 |---|---|---|---|---|
-| Multivariate-RNN | [High,Volume,Close] | 0.0002176880 | 0.0139925408 | 0.9423308750 |
+| Multivariate-RNN | [Open,High,Low,Close,Volume(N)] | 0.0002176880 | 0.0139925408 | 0.9423308750 |
 
-
-
-The results from the table revealed that multivariate analysis not only
-improves the performance of the model significantly but also reduces
-the complexity of model (Univariate-LSTM model has 17408 trainable
-parameters whereas Multivariate-RNN model has only 7087 trainable
-parameters) making multivariate analysis a more efficient tool for
-stocks prediction.
-
-We also observe that the Multivariate-GRU and Multivariate-LSTM
-models do not improve performance as much as expected and possible
-reasons for it are:
-  - The dataset used may not have long dependencies.
-  - More data is required for these models for training.
 
 ## VI) References
 
