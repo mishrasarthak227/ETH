@@ -64,7 +64,7 @@ operations and Pandas for data analysis.
 
 | Model | Features Used | MSE | RMSE | R2-score |
 |---|---|---|---|---|
-| Multivariate-RNN | [Open,High,Low,Close,Volume(N)] | 0.0002176880 | 0.0139925408 | 0.9423308750 |
+| Multivariate-RNN | [Open,High,Low,Close,Volume(N)] | 38.8054952229149 | 6.229405687777518 | 0.9980708654392528 |
 
 
 ## VI) References
